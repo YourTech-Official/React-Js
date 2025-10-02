@@ -1,0 +1,74 @@
+Q1. What is difference between library and framework ?
+Ans - A library is a collection of reusable code for specific tasks,
+ which your code calls and controls, giving you control over the application flow.
+ A framework provides a structured, pre-defined architecture and dictates the overall application flow.
+
+ Library:
+
+Collection of functions you call when needed. You control the application flow.
+
+Example: React, jQuery
+
+Framework:
+
+Complete structure that controls your app. It calls your code at specific points.
+
+Example: Angular, Django
+
+Q2. What is the difference between JavaScript and JavaScript + SWC( Speedy Web Compiler) ?
+Ans - JavaScript: Regular JS code that runs directly.
+
+JavaScript + SWC: JS code that gets compiled first for better performance and compatibility.
+
+Simple difference:
+
+JS = Write and run
+
+JS + SWC = Write, compile (super fast), then run.(SWC written in Rust.)
+
+Understand folder structure : -
+
+package.json - Contains project info, scripts, and dependencies list
+
+dependencies - Packages needed for production (runtime)
+
+devDependencies - Packages needed only for development (build tools, testing)
+
+src/ - Source code folder (your main code)
+
+public/ - Static files (HTML, images, icons)
+
+node_modules/ - Downloaded packages (don't touch)
+
+build/ - Compiled/production ready code
+
+.gitignore - Files to ignore in version control
+
+eslint.config.js - Code quality rules and error checking configuration
+
+README.md - Project documentation and instructions
+
+vite.config.js - Vite build tool configuration and settings
+
+package-lock.json - Locks exact versions of all dependencies for consistent installs
+
+Q3. What is Component in react or in general term ? 
+Ans - A component is a reusable piece of code that returns UI elements.
+ It's like a custom HTML tag that you can use multiple times.
+
+General term: Independent, reusable building blocks
+React term: JavaScript function that returns JSX
+
+Example: Button, Header, Card components
+
+Benefits: Reusable, maintainable, organized code
+
+Q4. What difference between components and function ?
+Ans - Component is a special function that returns JSX/UI elements. Regular function performs tasks and returns data.
+
+Function: Does calculations, processes data
+Component: Returns UI elements (JSX)
+
+Example:
+Function: add(a, b) returns number
+Component: App() returns <div>Hello</div>
